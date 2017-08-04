@@ -15,13 +15,15 @@ import os
 import inspect
 import getopt
 #Add path to LO/OO components.
-if sys.version_info.major == 3:
-    sys.path.append('/usr/lib/libreoffice/program')
-else:
-    sys.path.append('/usr/lib/openoffice4/program')
-    if getattr(os.environ, 'URE_BOOTSTRAP', None) is None:
-        os.environ['URE_BOOTSTRAP'] = "vnd.sun.star.pathname:/usr/lib/"\
-                                      "openoffice4/program/fundamentalrc"
+#if sys.version_info.major == 3:
+#    sys.path.append('/usr/lib/libreoffice/program')
+#else:
+#    sys.path.append('/usr/lib/openoffice4/program')
+#    if getattr(os.environ, 'URE_BOOTSTRAP', None) is None:
+#        os.environ['URE_BOOTSTRAP'] = "vnd.sun.star.pathname:/usr/lib/"\
+#                                      "openoffice4/program/fundamentalrc"
+sys.path.append('/opt/libreoffice5.3/program')
+
 # Add current directory to path to import smf module
 cmd_folder = os.path.realpath(os.path.abspath
                               (os.path.split(inspect.getfile

@@ -80,7 +80,7 @@ def cleanup_yahoo(self):
  
 def query_yahoo(self, ticker, stat):
     """Query Yahoo for the data we want""" 
-    url = 'http://finance.yahoo.com/d/quotes.csv?s=%s&f=%s' % (ticker, stat)
+    url = 'http://download.finance.yahoo.com/d/quotes.csv?s=%s&f=%s' % (ticker, stat)
     req = Request(url)
     try:
         response = urlopen(req)

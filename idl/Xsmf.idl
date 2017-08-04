@@ -1,4 +1,4 @@
-#include </usr/share/idl/libreoffice/com/sun/star/uno/XInterface.idl>
+#include </com/sun/star/uno/XInterface.idl>
 
 module com { module smf { module ticker { module getinfo {
 
